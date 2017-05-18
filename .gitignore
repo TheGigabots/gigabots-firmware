@@ -1,0 +1,6 @@
+.idea
+dist
+module-locations-cache.json
+config.json
+build
+node_modules
