@@ -2,7 +2,7 @@
 
 
 * Download [Etcher](https://etcher.io/)
-* Download [Latest Firmware](https://www.dropbox.com/s/mpejtjwqydbhmko/gigabot-brain-0.0.5.zip?dl=0)
+* Download [Latest Firmware](https://github.com/TheGigabots/gigabots-firmware/releases)
 
 
 ## Preparing the SD card
@@ -66,4 +66,3 @@ Congratulations.  It works.
 ## Disconnecting
 
 Use the back button to disconnect.
-å
