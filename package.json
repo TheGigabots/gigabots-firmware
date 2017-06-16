@@ -1,6 +1,6 @@
 {
   "name": "gigabots-firmware",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "watch": {
     "build": {
@@ -21,7 +21,7 @@
     "ansi-escapes": "^1.4.0",
     "async": "^2.3.0",
     "babel-polyfill": "^6.20.0",
-    "bigbang.io": "0.0.17",
+    "bigbang.io": "0.0.18",
     "ev3dev-lang": "^1.0.0",
     "eval": "^0.1.2",
     "figlet": "^1.2.0",
