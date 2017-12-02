@@ -1,3 +1,14 @@
+
+# The Gigabots Hardware
+
+The Gigabots are [LEGO Mindstorm EV3](https://www.lego.com/en-us/mindstorms/about-ev3) kits with special software that turns them into Internet of Things (IoT) devices.
+They are compatible with the [retail](https://www.lego.com/en-us/mindstorms/products/mindstorms-ev3-31313) and [Education Core](https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400) sets and sensors.
+
+In addition you need:
+ 
+ * A [SPECIFIC](https://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY/ref=sr_1_3?ie=UTF8&qid=1508603846&sr=8-3&keywords=edimax+wifi+adapter) WiFi dongle (Edimax EW-7811Un) along with a MicroSD card
+ * A microSD or microSDHC card 4GB or larger. microSDXC is not supported. All cards larger than 32GB *will not work*
+
 # The Gigabots EV3 Firmware (Brain)
 
 
