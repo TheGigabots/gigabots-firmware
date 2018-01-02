@@ -9,7 +9,7 @@ rsync -avz   \
 --include 'assets/' \
 --include 'dist/' \
 --include 'script/' \
---include 'util/' \
+--include 'tools/' \
 --exclude '*' \
 --exclude '*.config.js' \
 . robot@ev3dev:/home/robot/
