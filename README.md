@@ -72,8 +72,51 @@ You should eventually see text like the following:
     [brain] Brain -> configured as D1K63
     [brain] Network init()
     
-Congratulations.  It works.    
+Note that your Gigabot will have a unique short code.  Congratulations.  It works.    
 
 ## Disconnecting
 
 Use the back button to disconnect.
+
+
+
+## Advanced WiFi Credentials and Networking
+
+### Config file
+
+It may be preferable to supply the network credentials via a configuration file.  After you burn your firmware
+create a file called `network.cfg` and place it in the root directory of the firmware image.
+
+The format of the configuration file is:
+
+
+    SSID=<your network SSID>
+    PSK=<your network password>
+
+
+Note that this will override any configuration you perform using the menu and will be applied after every restart of the bot.
+
+### Display WifI MAC
+
+
+Some networks require a whitelisted MAC.
+
+* Select `Wireless and Networks`
+* Select `Wifi`
+* Select `Powered` to enable Wifi
+* `Back` button to main menu
+* Select `File Browser`
+* Select `tools`
+* Select `show_wifi_mac.py*`
+
+
+
+
+
+
+
+
+
+
+
+
