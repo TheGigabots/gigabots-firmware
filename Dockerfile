@@ -1,6 +1,8 @@
 FROM ev3dev/ev3dev-jessie-ev3-generic:2017-12-13
-ADD fonts /
+## Rsync is used for firmware development
+RUN apt-get install rysnc
 
+ADD fonts /
 ADD dist /home/robot/dist
 ADD assets /home/robot/assets
 ADD script /home/robot/script
