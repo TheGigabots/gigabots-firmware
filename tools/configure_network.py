@@ -33,11 +33,13 @@ def createConfig(cmSSID):
 Name={1}
 SSID={2}
 Passphrase={3}
+Favorite=true
 AutoConnect=true
 IPv4.method=dhcp
+IPv6.method=off
+IPv6.privacy=disabled
 """
   cmPrefix = "/var/lib/connman"
-  #cmPrefix = "/tmp"
   path = "{0}/{1}".format(cmPrefix,cmSSID)
 
   try:
