@@ -14,7 +14,7 @@ ADD tools/show_wifi_mac.py      /home/robot/tools/show_wifi_mac.py
 
 RUN chmod +x                    /etc/rc.local
 RUN chmod +x                    /home/robot/gigabot.sh
-RUN chmod g+sx                  /home/robot/tools/configure_network.py
+RUN chmod ug+sx                 /home/robot/tools/configure_network.py
 RUN chmod +x                    /home/robot/tools/show_wifi_mac.py
 
 RUN chown -R robot /home/robot/script
