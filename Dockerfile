@@ -1,7 +1,7 @@
 FROM ev3dev/ev3dev-jessie-ev3-generic:2017-12-13
 # Rsync is used for firmware development
 # curl is for firmware update
-RUN apt-get update && apt-get install rsync curl
+RUN apt-get update && apt-get install rsync curl -y
 
 # Add assets to image
 ADD fonts                       /
