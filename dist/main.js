@@ -33647,16 +33647,15 @@ var Network = function () {
                         var brain = _this.brain;
 
                         _this.brain.log("Loading script");
-                        brain.botApi.beep(100, 100);
+                        brain.botApi.beep(130, 100);
 
                         brain.scripting.write(new Buffer(msg.src, 'base64').toString()).then(function () {
                             brain.scripting.load(brain.botApi, brain.friends).then(function () {
-                                brain.botApi.beep(5000, 100);
-                                brain.scripting.execute();
+                                brain.botApi.beep(261, 300);
                             });
                         });
                     } else if (type === 'startScript') {
-                        _this.brain.botApi.beep(5000, 100);
+                        _this.brain.botApi.beep(4186, 100);
                         _this.brain.scripting.execute();
                     } else if (type === 'stopScript') {
                         _this.brain.scripting.stop();
