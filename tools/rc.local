@@ -11,7 +11,10 @@
 #
 # By default this script does nothing.
 
-
-/home/robot/tools/configure_network.py
+# Create and set correct permissions for gigabot
+# config directory.  We store the bots credentials
+# on the boot partition so they can be copied to a
+# new bot
+mkdir -p /boot/flash/gigabot
 
 exit 0

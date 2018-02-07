@@ -27039,7 +27039,7 @@ var Brain = function () {
                             secret: result.secret
                         };
 
-                        fs.writeFile('config.json', JSON.stringify(_this4.config), function (err) {
+                        fs.writeFile(_this4.getConfigFile(), JSON.stringify(_this4.config), function (err) {
                             if (err) {
                                 reject(err);
                             } else {
@@ -27061,14 +27061,24 @@ var Brain = function () {
             return this.getBotEnv() === 'ev3';
         }
     }, {
+        key: 'getConfigFile',
+        value: function getConfigFile() {
+            var configFile = 'gigabot.config.json';
+
+            if (this.isEv3Env()) {
+                configFile = '/boot/flash/gigabot/gigabot.config.json';
+            }
+            return configFile;
+        }
+    }, {
         key: 'readConfig',
         value: function readConfig() {
             var _this5 = this;
 
             return new Promise(function (resolve, reject) {
-                fs.exists('config.json', function (exists) {
+                fs.exists(_this5.getConfigFile(), function (exists) {
                     if (exists) {
-                        fs.readFile('config.json', function (err, data) {
+                        fs.readFile(_this5.getConfigFile(), function (err, data) {
                             if (err) {
                                 reject(err);
                             } else {
@@ -46917,7 +46927,7 @@ module.exports = Extensions;
 /* 467 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"gigabots-firmware","version":"0.0.9-pre","description":"","watch":{"build":{"patterns":["lib"],"extensions":"js"}},"scripts":{"build":"bash sync.sh","dist":"rm -rf dist && webpack --color --config webpack.config.js","watch":"npm-watch"},"author":"","license":"ISC","dependencies":{"ansi-escapes":"^1.4.0","async":"^2.3.0","babel-plugin-syntax-async-functions":"^6.13.0","babel-plugin-transform-regenerator":"^6.26.0","babel-polyfill":"^6.20.0","bigbang.io":"0.0.18","ev3dev-lang":"^1.0.0","eval":"^0.1.2","figlet":"^1.2.0","lodash":"^4.17.4","retry":"^0.10.1","source-map-support":"^0.4.11"},"devDependencies":{"babel-core":"^6.23.1","babel-loader":"^6.4.0","babel-preset-es2015":"^6.22.0","npm-watch":"^0.1.8","source-map-loader":"^0.1.6","webpack":"^2.2.1"}}
+module.exports = {"name":"gigabots-firmware","version":"0.0.9","description":"","watch":{"build":{"patterns":["lib","tools"],"extensions":["js","py","sh"]}},"scripts":{"build":"bash sync.sh","dist":"rm -rf dist && webpack --color --config webpack.config.js","watch":"npm-watch"},"author":"","license":"ISC","dependencies":{"ansi-escapes":"^1.4.0","async":"^2.3.0","babel-plugin-syntax-async-functions":"^6.13.0","babel-plugin-transform-regenerator":"^6.26.0","babel-polyfill":"^6.20.0","bigbang.io":"0.0.18","ev3dev-lang":"^1.0.0","eval":"^0.1.2","figlet":"^1.2.0","lodash":"^4.17.4","retry":"^0.10.1","source-map-support":"^0.4.11"},"devDependencies":{"babel-core":"^6.23.1","babel-loader":"^6.4.0","babel-preset-es2015":"^6.22.0","npm-watch":"^0.1.8","source-map-loader":"^0.1.6","webpack":"^2.2.1"}}
 
 /***/ }),
 /* 468 */

@@ -1,13 +1,14 @@
 {
   "name": "gigabots-firmware",
-  "version": "0.0.9-pre",
+  "version": "0.0.9",
   "description": "",
   "watch": {
     "build": {
       "patterns": [
-        "lib"
+        "lib",
+        "tools"
       ],
-      "extensions": "js"
+      "extensions": ["js", "py", "sh"]
     }
   },
   "scripts": {
