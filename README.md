@@ -93,24 +93,22 @@ The format of the configuration file is:
     SSID=<your network SSID>
     PSK=<your network password>
 
-
-Note that this will override any configuration you perform using the menu and will be applied after every restart of the bot.
 The section header `[default]` is required, don't leave it out.
 
 
-Once you have booted your Gigabot you should be able to have it connect and the credentials should already be present and ready to go
+Once you have booted your Gigabot you should be able to apply your credentials.
 
 * Select `Wireless and Networks`
 * Select `Wifi`
 * Select `Powered` to enable Wifi
-* Select your WiFi network from the list of networks displayed
-* Select `Connect`
-
+* `Back` button to main menu
+* Select `File Browser`
+* Select `tools`
+* Select `configure_network.py*`
 
 
 
 ### Display WiFi MAC
-
 
 Some networks require a whitelisted MAC.
 
@@ -121,6 +119,17 @@ Some networks require a whitelisted MAC.
 * Select `File Browser`
 * Select `tools`
 * Select `show_wifi_mac.py*`
+
+
+### Network Reset
+
+Networks with multiple AP's with the same SSID can occasionally
+cause some problems.  This forces your bot to forget any previous networks or settings.
+
+* Select `File Browser`
+* Select `tools`
+* Select `reset_network.sh*`
+
 
 
 
